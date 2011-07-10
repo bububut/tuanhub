@@ -1,1 +1,22 @@
-tuanhub is a crawler collecting tuangou information over China internet
+tuanhub is a crawler collecting tuangou information over China internet.
+
+Based on elixir.
+
+Don't forget to execute create.py if you don't have tables in your database.
+
+For each deal, following information will be fetched:
+url
+title
+price
+original price
+image
+start time
+end time
+num. of buying
+shop list
+
+Shop list is another table with:
+shop name
+shop address
+latitude
+longitude
