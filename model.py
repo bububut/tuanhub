@@ -11,11 +11,16 @@ class Deal(Entity):
     start_time = Field(DateTime)
     end_time = Field(DateTime)
     bought = Field(Integer)
-    shops = ManyToMany('Shop')
+    shops = OneToMany('Shop')
+    type = Field(Integer)
+    city = Field(String(50))
+    site = Field(String(16))
 
 class Shop(Entity):
     name = Field(Unicode(50))
     address = Field(Unicode(100))
+    tel = Field(Unicode(30))
     latitude = Field(Float)
     longitude = Field(Float)
+    deal = ManyToOne('Deal')
 

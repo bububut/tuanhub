@@ -1,0 +1,4 @@
+*.pyc
+data.sqlite*
+tuanhub.log
+.DS_Store
